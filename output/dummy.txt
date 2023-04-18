@@ -1,0 +1,2 @@
+Only purpose: populate a new folder output the advanced pandoc GitHub action
+shall use to deposit a .pdf file
