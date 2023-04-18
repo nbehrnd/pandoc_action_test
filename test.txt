@@ -1,0 +1,4 @@
+This file only has one purpose: On commit, the single action defined to write the
+html file is started again. The initial creation of the yml file was successful
+for GitHub, but neither new input.txt, nor index.html were seen.  But perhaps now
+a commit of a new file changes / improves the situation.
