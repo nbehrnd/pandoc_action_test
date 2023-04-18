@@ -1,5 +1,6 @@
 # verbatim copy [2023-04-18 Tue] 21:22 UTC+2
 # https://github.com/pandoc/pandoc-action-example
+# manually added line to provide a title, because the log suggest it
 name: Long Usage
 
 on: push
@@ -14,4 +15,5 @@ jobs:
           args: >-  # allows you to break string into multiple lines
             --standalone
             --output=index.html
+            --metadata title="an example"
             input.txt
