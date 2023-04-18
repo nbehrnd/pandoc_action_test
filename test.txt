@@ -2,3 +2,6 @@ This file only has one purpose: On commit, the single action defined to write th
 html file is started again. The initial creation of the yml file was successful
 for GitHub, but neither new input.txt, nor index.html were seen.  But perhaps now
 a commit of a new file changes / improves the situation.
+
+By now there is a folder output the advanced GitHub / pandoc action can
+use, and there is no intentionally added file in this folder.
