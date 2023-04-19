@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "Lorem ipsum" > lorem_1.md  # create two example files
           echo "dolor sit amet" > lorem_2.md
-          echo "rusticus arat; danububius fluvius magnus est" > lorem_3.md  # added
+          echo "rusticus arat danububius fluvius magnus est" > lorem_3.md  # added
           mkdir output  # create output dir
           # this will also include README.md
           echo "files=$(printf '"%s" ' *.md)" > $GITHUB_OUTPUT
