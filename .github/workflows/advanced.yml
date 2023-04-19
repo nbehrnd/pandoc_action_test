@@ -1,5 +1,6 @@
 # date: [2023-04-18 Tue] 22:18 GMT+2
 # source: https://github.com/pandoc/pandoc-action-example
+# with an additional line
 
 name: Advanced Usage
 
@@ -16,6 +17,7 @@ jobs:
         run: |
           echo "Lorem ipsum" > lorem_1.md  # create two example files
           echo "dolor sit amet" > lorem_2.md
+          echo "rusticus arat" > lorem_3.md  # added
           mkdir output  # create output dir
           # this will also include README.md
           echo "files=$(printf '"%s" ' *.md)" > $GITHUB_OUTPUT
