@@ -1,6 +1,6 @@
 # date: [2023-04-18 Tue] 22:18 GMT+2
 # source: https://github.com/pandoc/pandoc-action-example
-# with an additional line
+# with an additional line, substitute checkout v2 -> v3
 
 name: Advanced Usage
 
@@ -10,14 +10,14 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: create file list
         id: files_list
         run: |
           echo "Lorem ipsum" > lorem_1.md  # create two example files
           echo "dolor sit amet" > lorem_2.md
-          echo "rusticus arat" > lorem_3.md  # added
+          echo "rusticus arat; danububius fluvius magnus est" > lorem_3.md  # added
           mkdir output  # create output dir
           # this will also include README.md
           echo "files=$(printf '"%s" ' *.md)" > $GITHUB_OUTPUT
